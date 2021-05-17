@@ -6,6 +6,8 @@ public class Player : MonoBehaviour
 {
 	private float horisontaalinenPyorinta = 0;
 
+    public float painovoima = 10f;
+
     public Animator anim;
 
     // Start is called before the first frame update
@@ -28,6 +30,8 @@ public class Player : MonoBehaviour
         horisontaalinenPyorinta += Input.GetAxis("Mouse X") * 3;
         transform.localRotation = Quaternion.Euler(0, horisontaalinenPyorinta, 0);
         nopeus = transform.rotation * nopeus;
+
+        nopeus.y -= painovoima;
 
         //komento, jolla lopulta liikutaan
         hahmokontrolleri.Move(nopeus * Time.deltaTime);

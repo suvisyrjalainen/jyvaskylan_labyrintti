@@ -582,6 +582,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fa7cd4514c64ee41a51c5aa6d37cc47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  painovoima: 5
   anim: {fileID: 0}
 --- !u!1001 &895248358
 PrefabInstance:
@@ -817,6 +818,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de3600148de72214484a66e0dd06e46f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 1
 --- !u!143 &996745834
 CharacterController:
   m_ObjectHideFlags: 0
